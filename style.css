@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  
+}
+html{
+  font-size: 65%;
+}
+.nav{
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff10;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 10px 100px black;
+  background-color: rgb(2, 20, 49);
+}
+.nav .logo{
+width: 100px;
+height: 40px;
+/*border: 1px solid black;*/
+position: relative;
+left: -80px;
+top: 30px;
+}
+.nav .logo h5{
+  color: grey;
+  font-family: italic ;
+  position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 30px;
+ font-weight: 300;
+  
+}
+span{
+  align-items: center;
+  color: blueviolet;
+}
+
+.nav .tabs{
+  width: 450px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+}
+.nav .tabs a{
+  text-decoration: none;
+  color: gray;
+  font-family: sans-serif;
+  transition: -5s;
+}
+.nav .tabs a:nth-child(){
+  text-shadow: #fff;
+  color: #fff;
+}
+.nav .tabs a:hover{
+  color: #fff;
+}
+.nav .log{
+  width: 165px;
+  height: 100px;
+  position: relative;
+  right: -80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav .log a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: -5s;
+  font-size: 15px;
+}
+.nav .log a:nth-child(1){
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+
+}
+.nav .log a:nth-child(1):hover{
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+}
+.nav .log a:nth-child(2){
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+
+}
+.nav .log a:nth-child(2):hover{
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+}
+
+
+.hero-section{
+position: relative;
+height: 100vh;
+overflow: hidden;
+}
+
+
+
+.typewriter h1 {
+  font-size: 35px;
+  text-align: center;
+  padding: 80px;
+  /* border-right: 1px solid transparent; Add a border to simulate typing */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide any overflowing text */
+  animation: typing 3s steps(28), blink-caret 0.5s step-end infinite; /* Apply the typing animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with zero width */
+  }
+  to {
+    width: 100%; /* End with full width */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; /* Hide the caret */
+  }
+  50% {
+    border-color: white; /* Show the caret */
+  }
+}
+
+
+.typewriter p{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: start;
+  padding-top: 100px; 
+  color: #fff;
+}
+
+.designed-btn {
+  display: inline-flex;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-items: flex-end;
+
+}
+
+.designed-btn:hover {
+  background-color: rgb(2, 20, 49);
+  color: #fff;
+  text-decoration: none;
+}
+.typewriter  .designed-btn a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+.typewriter  .designed-btn a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: -5s;
+  font-size: 15px;
+}
+.typewriter  .designed-btn a:nth-child(1){
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+
+}
+.typewriter  .designed-btn a:nth-child(1):hover{
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+}
+.typewriter  .designed-btn a:nth-child(2){
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+
+}
+.typewriter  .designed-btn a:nth-child(2):hover{
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media queries */
+
+@media (max-width: 768px) {
+header {
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.typing-h1 {
+    font-size: 24px;
+}
+
+.designed-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+}
